@@ -24,7 +24,7 @@
             --coral: #ff6273;
             --peach: #f89e7c;
             --charcoal: #201816;
-            --gray: #6b7280;
+            --gray: #4b5563;
             --gray-light: #9ca3af;
             --cream: #f8f6f4;
             --white: #ffffff;
@@ -48,6 +48,13 @@
         a {
             color: inherit;
             text-decoration: none;
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--indigo);
+            outline-offset: 2px;
+            border-radius: 4px;
         }
 
         /* Header */
@@ -119,7 +126,7 @@
             padding: 14px 28px;
             border-radius: 8px;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 16px;
             transition: background 0.2s;
         }
 
@@ -162,7 +169,7 @@
         }
 
         .section-label {
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -184,36 +191,16 @@
 
         .grid-4 .item h3 {
             font-family: 'DM Sans', sans-serif;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 700;
             color: var(--charcoal);
             margin-bottom: 6px;
         }
 
         .grid-4 .item p {
-            font-size: 13px;
+            font-size: 15px;
             color: var(--gray);
             line-height: 1.5;
-        }
-
-        /* Audience */
-        .audience {
-            padding: 32px 0 48px;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .tag {
-            background: linear-gradient(135deg, #ffeacb, #ffd9a8);
-            padding: 8px 16px;
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--charcoal);
         }
 
         /* Use Cases */
@@ -244,14 +231,14 @@
         }
 
         .use-case-item h3 {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 600;
             color: var(--charcoal);
             margin-bottom: 4px;
         }
 
         .use-case-item p {
-            font-size: 13px;
+            font-size: 15px;
             color: var(--gray);
         }
 
@@ -260,8 +247,45 @@
             color: var(--indigo);
             padding: 2px 6px;
             border-radius: 4px;
-            font-size: 12px;
+            font-size: 13px;
             font-family: 'SF Mono', Monaco, monospace;
+        }
+
+        /* What Makes This Different */
+        .different {
+            padding: 48px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .different-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .different-item {
+            background: var(--cream);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .different-item h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 6px;
+        }
+
+        .different-item p {
+            font-size: 15px;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .different-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Why Open Source */
@@ -302,14 +326,14 @@
         }
 
         .reason-item h3 {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 700;
             color: var(--charcoal);
             margin-bottom: 4px;
         }
 
         .reason-item p {
-            font-size: 13px;
+            font-size: 15px;
             color: var(--gray);
             line-height: 1.5;
         }
@@ -343,7 +367,7 @@
             padding: 10px 20px;
             border: 1px solid #ddd;
             border-radius: 100px;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 600;
             color: var(--charcoal);
             transition: all 0.2s;
@@ -378,21 +402,21 @@
         }
 
         .join-item h3 {
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 700;
             color: var(--charcoal);
             margin-bottom: 8px;
         }
 
         .join-item p {
-            font-size: 13px;
+            font-size: 15px;
             color: var(--gray);
             margin-bottom: 16px;
             line-height: 1.5;
         }
 
         .join-item a {
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 600;
             color: var(--coral);
         }
@@ -412,8 +436,8 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 36px;
-            height: 36px;
+            width: 44px;
+            height: 44px;
             border-radius: 8px;
             background: var(--indigo-light);
             color: var(--indigo);
@@ -553,66 +577,74 @@
                 <div class="grid-4">
                     <div class="item">
                         <h3>Concepts</h3>
-                        <p>Cognitive debt, fluency bias, jagged frontier</p>
+                        <p>Name what's happening to our thinking with AI — cognitive debt, fluency bias, jagged frontier</p>
                     </div>
                     <div class="item">
                         <h3>Frameworks</h3>
-                        <p>Systems for human-AI collaboration</p>
+                        <p>Decision models for when to use AI and when to think independently</p>
                     </div>
                     <div class="item">
                         <h3>Practices</h3>
-                        <p>Think-first, calibration, strategic alternation</p>
+                        <p>Ready-to-use exercises and rituals — think-first, calibration, strategic alternation</p>
                     </div>
                     <div class="item">
                         <h3>Sources</h3>
-                        <p>Primary research with full citations</p>
+                        <p>30+ curated papers with key findings you can plug into decks and curricula</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="audience">
+        <section class="different">
             <div class="container">
-                <p class="section-label">Who It's For</p>
-                <div class="tags">
-                    <span class="tag">Educators</span>
-                    <span class="tag">Corporate Trainers</span>
-                    <span class="tag">Researchers</span>
-                    <span class="tag">Power Users</span>
+                <p class="section-label">What Makes This Different</p>
+                <div class="different-grid">
+                    <div class="different-item">
+                        <h3>Pro-human, not anti-AI</h3>
+                        <p>The question isn't "use AI or not?" — it's how to use it without eroding judgment and skill.</p>
+                    </div>
+                    <div class="different-item">
+                        <h3>Evidence-first</h3>
+                        <p>Every concept and practice ties back to primary research or well-documented field patterns. No opinion pieces.</p>
+                    </div>
+                    <div class="different-item">
+                        <h3>Designed for teaching</h3>
+                        <p>Entries are written so you can drop them into a slide deck, syllabus, or workshop with minimal rework.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="use-cases">
             <div class="container">
-                <p class="section-label">How to Use It</p>
+                <p class="section-label">What You Can Do With It</p>
                 <div class="use-case-grid">
                     <div class="use-case-item">
                         <span class="arrow">›</span>
                         <div>
-                            <h3>Educators</h3>
-                            <p>Start with <code>cognitive-debt</code> (the core problem) → <code>fluency-bias</code> (why it's hard to notice) → <code>think-first</code> (what to teach).</p>
+                            <h3>Run a workshop on AI and critical thinking</h3>
+                            <p>Start with <code>cognitive-debt</code> → <code>fluency-bias</code> → <code>think-first</code>. You'll have a 30-minute session grounded in research, not opinion.</p>
                         </div>
                     </div>
                     <div class="use-case-item">
                         <span class="arrow">›</span>
                         <div>
-                            <h3>Corporate Trainers</h3>
-                            <p><code>jagged-frontier</code> has BCG data that makes the case. <code>calibration</code> gives participants a decision tool to take home.</p>
+                            <h3>Make the business case for responsible AI use</h3>
+                            <p><code>jagged-frontier</code> has BCG data showing when AI helps and when it hurts. <code>novice-vulnerability</code> quantifies the risk for early-career talent.</p>
                         </div>
                     </div>
                     <div class="use-case-item">
                         <span class="arrow">›</span>
                         <div>
-                            <h3>Researchers</h3>
-                            <p>Browse <code>sources/</code> for 30+ papers. Load into NotebookLM to synthesize. Check <code>status: speculative</code> entries for gaps.</p>
+                            <h3>Give your team a practical AI decision framework</h3>
+                            <p><code>calibration</code> is a ready-to-use tool for deciding when to use AI and when to think independently. Participants take it home.</p>
                         </div>
                     </div>
                     <div class="use-case-item">
                         <span class="arrow">›</span>
                         <div>
-                            <h3>Power Users</h3>
-                            <p><code>novice-vulnerability</code> for self-assessment. <code>calibration</code> for daily practice. Load KB into your RAG tool for personalized guidance.</p>
+                            <h3>Ground your writing or research in evidence</h3>
+                            <p>Browse 30+ curated sources from cognitive science, HCI, and behavioral economics — each with key findings and full citations.</p>
                         </div>
                     </div>
                 </div>
