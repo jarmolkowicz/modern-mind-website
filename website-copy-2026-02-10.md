@@ -4,7 +4,7 @@
 
 **Title:** Modern Mind — Knowledge Base for the AI Age
 
-**Subtitle:** Research, practice, and professional insight translated into concepts you can teach from, apply, and verify.
+**Subtitle:** Curated research, practice, and professional insight translated into concepts you can trust, teach from, and apply.
 
 **Stance:** Not anti-AI. Not blindly pro-AI. Pro-human.
 
@@ -52,6 +52,8 @@ Once your AI has the knowledge pack as context, you can prompt it to do real wor
 - **Write with depth** — "Using the KB, help me write a LinkedIn post about why our consulting deliverables feel hollow. Ground it in research."
 - **Review an AI workflow** — "Using the KB, review this AI workflow and flag where cognitive offloading risks are highest"
 - **Onboard a team** — "Using the KB, create a 30-minute briefing on the key cognitive risks for someone joining an AI-heavy team"
+
+**CTA (repeat, subtle):** Explore the Knowledge Base
 
 ---
 
