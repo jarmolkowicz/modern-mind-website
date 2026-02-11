@@ -4,11 +4,14 @@
 
 **Title:** Modern Mind — Knowledge Base for the AI Age
 
-**Subtitle:** Curated research, practice, and professional insight translated into concepts you can trust, teach from, and apply.
+**Subtitle:** Curated knowledge on AI and human thinking. Give it to your AI. Turn it into a domain specialist.
 
 **Stance:** Not anti-AI. Not blindly pro-AI. Pro-human.
 
-**CTA:** Explore the Knowledge Base
+**Primary CTA:** Get the Knowledge Pack
+**Secondary CTA:** Browse on GitHub
+
+**Example prompt:** "Using the KB, design a 2-hour workshop for senior consultants on cognitive risks of AI adoption"
 
 ---
 
@@ -19,17 +22,6 @@ AI is advancing fast. Our understanding isn't keeping up.
 The risk isn't that AI replaces us. It's that we quietly outsource our thinking without realizing it — and wake up unable to do the work that once defined us.
 
 We don't need more hype. We need wisdom.
-
----
-
-## What's Inside
-
-Curated knowledge on AI and human thinking — structured for your AI to use as context, or for you to use directly.
-
-- **Concepts** — Named phenomena: cognitive debt, fluency bias, jagged frontier, and 35 more
-- **Frameworks** — Decision models for when to use AI and when to think independently
-- **Practices** — Methods for preserving thinking capacity: think-first, calibration, strategic alternation
-- **Sources** — 30+ curated papers with key findings and full citations
 
 ---
 
@@ -53,7 +45,18 @@ Once your AI has the knowledge pack as context, you can prompt it to do real wor
 - **Review an AI workflow** — "Using the KB, review this AI workflow and flag where cognitive offloading risks are highest"
 - **Onboard a team** — "Using the KB, create a 30-minute briefing on the key cognitive risks for someone joining an AI-heavy team"
 
-**CTA (repeat, subtle):** Explore the Knowledge Base
+**CTA (repeat):** Get the Knowledge Pack
+
+---
+
+## What's Inside
+
+Curated knowledge on AI and human thinking — structured for your AI to use as context, or for you to use directly.
+
+- **Concepts** — Named phenomena: cognitive debt, fluency bias, jagged frontier, and 35 more
+- **Frameworks** — Decision models for when to use AI and when to think independently
+- **Practices** — Methods for preserving thinking capacity: think-first, calibration, strategic alternation
+- **Sources** — 30+ curated papers with key findings and full citations
 
 ---
 

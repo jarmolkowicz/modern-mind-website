@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Mind — Knowledge Base for the AI Age</title>
-    <meta name="description" content="Curated knowledge on AI and human thinking. Download the knowledge pack, give it to your AI, and get grounded answers instead of generic ones. Open source.">
+    <meta name="description" content="Curated knowledge on AI and human thinking. Give it to your AI. Turn it into a domain specialist. Open source knowledge pack you can download and use.">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
     <!-- Google Analytics (consent-gated) -->
@@ -32,14 +32,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://modrnmind.com">
     <meta property="og:title" content="Modern Mind — Knowledge Base for the AI Age">
-    <meta property="og:description" content="Curated knowledge on AI and human thinking. Download the knowledge pack, give it to your AI, and get grounded answers instead of generic ones.">
+    <meta property="og:description" content="Curated knowledge on AI and human thinking. Give it to your AI. Turn it into a domain specialist.">
     <meta property="og:site_name" content="Modern Mind">
     <meta property="og:image" content="https://modrnmind.com/og.png">
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Modern Mind — Knowledge Base for the AI Age">
-    <meta name="twitter:description" content="Curated knowledge on AI and human thinking. Download the knowledge pack, give it to your AI, and get grounded answers instead of generic ones.">
+    <meta name="twitter:description" content="Curated knowledge on AI and human thinking. Give it to your AI. Turn it into a domain specialist.">
     <meta name="twitter:image" content="https://modrnmind.com/og.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -168,6 +168,14 @@
             margin-bottom: 32px;
         }
 
+        .hero-ctas {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
         .hero .cta {
             display: inline-flex;
             align-items: center;
@@ -186,6 +194,29 @@
         }
 
         .hero .cta svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .hero .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border: 1.5px solid var(--indigo);
+            color: var(--indigo);
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .hero .cta-secondary:hover {
+            background: var(--indigo);
+            color: var(--white);
+        }
+
+        .hero .cta-secondary svg {
             width: 16px;
             height: 16px;
         }
@@ -283,6 +314,11 @@
             line-height: 1.4;
         }
 
+        .use-case-item > div {
+            flex: 1;
+            min-width: 0;
+        }
+
         .use-case-item h3 {
             font-size: 16px;
             font-weight: 600;
@@ -291,8 +327,37 @@
         }
 
         .use-case-item p {
-            font-size: 15px;
+            font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+            font-size: 13px;
             color: var(--gray);
+            line-height: 1.5;
+        }
+
+        .use-case-item .copy-btn {
+            flex-shrink: 0;
+            align-self: center;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            background: transparent;
+            color: var(--gray-light);
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-left: auto;
+        }
+
+        .use-case-item .copy-btn:hover {
+            background: var(--indigo-light);
+            color: var(--indigo);
+        }
+
+        .use-case-item .copy-btn svg {
+            width: 16px;
+            height: 16px;
         }
 
         /* Subtle CTA */
@@ -676,6 +741,11 @@
             .hero h1 {
                 font-size: 32px;
             }
+
+            .hero-ctas {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
@@ -709,14 +779,22 @@
         <section class="hero">
             <div class="container">
                 <h1>Modern Mind — Knowledge Base for the AI Age</h1>
-                <p class="subtitle">Curated research, practice, and professional insight translated into concepts you can trust, teach from, and apply.</p>
+                <p class="subtitle">Curated knowledge on AI and human thinking. Give it to your AI. Turn it into a domain specialist.</p>
                 <p class="stance">Not anti-AI · Not blindly pro-AI · Pro-human</p>
-                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" class="cta" target="_blank" rel="noopener">
-                    Explore the Knowledge Base
-                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                        <path d="M3 8h10M9 4l4 4-4 4"/>
-                    </svg>
-                </a>
+                <div class="hero-ctas">
+                    <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest" class="cta" target="_blank" rel="noopener">
+                        Get the Knowledge Pack
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M8 3v10M4 9l4 4 4-4"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" class="cta-secondary" target="_blank" rel="noopener">
+                        Browse on GitHub
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M3 8h10M9 4l4 4-4 4"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -725,35 +803,6 @@
                 <p>AI is advancing fast. Our understanding isn't keeping up.</p>
                 <p>The risk isn't that AI replaces us. It's that we quietly outsource our thinking without realizing it — and wake up unable to do the work that once defined us.</p>
                 <p class="highlight">We don't need more hype. We need wisdom.</p>
-            </div>
-        </section>
-
-        <section class="whats-inside">
-            <div class="container">
-                <h2 class="section-label">What's Inside</h2>
-                <p class="section-intro">Curated knowledge on AI and human thinking — structured for your AI to use as context, or for you to use directly.</p>
-                <div class="grid-4">
-                    <div class="item">
-                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
-                        <h3>Concepts</h3>
-                        <p>Named phenomena: cognitive debt, fluency bias, jagged frontier, and 35 more</p>
-                    </div>
-                    <div class="item">
-                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h7"/></svg></div>
-                        <h3>Frameworks</h3>
-                        <p>Decision models for when to use AI and when to think independently</p>
-                    </div>
-                    <div class="item">
-                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
-                        <h3>Practices</h3>
-                        <p>Methods for preserving thinking capacity: think-first, calibration, strategic alternation</p>
-                    </div>
-                    <div class="item">
-                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
-                        <h3>Sources</h3>
-                        <p>30+ curated papers with key findings and full citations</p>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -783,51 +832,95 @@
 
         <section class="use-cases">
             <div class="container">
-                <h2 class="section-label">What You Can Do With It</h2>
-                <p class="section-intro">Once your AI has the knowledge pack as context, you can prompt it to do real work:</p>
+                <h2 class="section-label">Try These Prompts</h2>
+                <p class="section-intro">Once your AI has the knowledge pack as context, try prompting it:</p>
                 <div class="use-case-grid">
                     <div class="use-case-item">
                         <span class="arrow" aria-hidden="true">›</span>
                         <div>
                             <h3>Design a training</h3>
-                            <p>"Using the KB, design a 2-hour workshop for senior consultants on cognitive risks of AI adoption"</p>
+                            <p>Using the KB, design a 2-hour workshop for senior consultants on cognitive risks of AI adoption</p>
                         </div>
+                        <button class="copy-btn" onclick="copyPrompt(this)" aria-label="Copy prompt">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        </button>
                     </div>
                     <div class="use-case-item">
                         <span class="arrow" aria-hidden="true">›</span>
                         <div>
                             <h3>Draft a policy</h3>
-                            <p>"Using the KB, draft an AI use policy that addresses Borrowed Certainty and Automation Bias for our team"</p>
+                            <p>Using the KB, draft an AI use policy that addresses Borrowed Certainty and Automation Bias for our team</p>
                         </div>
+                        <button class="copy-btn" onclick="copyPrompt(this)" aria-label="Copy prompt">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        </button>
                     </div>
                     <div class="use-case-item">
                         <span class="arrow" aria-hidden="true">›</span>
                         <div>
                             <h3>Write with depth</h3>
-                            <p>"Using the KB, help me write a LinkedIn post about why our consulting deliverables feel hollow. Ground it in research."</p>
+                            <p>Using the KB, help me write a LinkedIn post about why our consulting deliverables feel hollow. Ground it in research.</p>
                         </div>
+                        <button class="copy-btn" onclick="copyPrompt(this)" aria-label="Copy prompt">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        </button>
                     </div>
                     <div class="use-case-item">
                         <span class="arrow" aria-hidden="true">›</span>
                         <div>
                             <h3>Review an AI workflow</h3>
-                            <p>"Using the KB, review this AI workflow and flag where cognitive offloading risks are highest"</p>
+                            <p>Using the KB, review this AI workflow and flag where cognitive offloading risks are highest</p>
                         </div>
+                        <button class="copy-btn" onclick="copyPrompt(this)" aria-label="Copy prompt">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        </button>
                     </div>
                     <div class="use-case-item">
                         <span class="arrow" aria-hidden="true">›</span>
                         <div>
                             <h3>Onboard a team</h3>
-                            <p>"Using the KB, create a 30-minute briefing on the key cognitive risks for someone joining an AI-heavy team"</p>
+                            <p>Using the KB, create a 30-minute briefing on the key cognitive risks for someone joining an AI-heavy team</p>
                         </div>
+                        <button class="copy-btn" onclick="copyPrompt(this)" aria-label="Copy prompt">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        </button>
                     </div>
                 </div>
-                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" class="cta-subtle" target="_blank" rel="noopener">
-                    Explore the Knowledge Base
+                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest" class="cta-subtle" target="_blank" rel="noopener">
+                    Get the Knowledge Pack
                     <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                        <path d="M3 8h10M9 4l4 4-4 4"/>
+                        <path d="M8 3v10M4 9l4 4 4-4"/>
                     </svg>
                 </a>
+            </div>
+        </section>
+
+        <section class="whats-inside">
+            <div class="container">
+                <h2 class="section-label">What's Inside</h2>
+                <p class="section-intro">Curated knowledge on AI and human thinking — structured for your AI to use as context, or for you to use directly.</p>
+                <div class="grid-4">
+                    <div class="item">
+                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+                        <h3>Concepts</h3>
+                        <p>Named phenomena: cognitive debt, fluency bias, jagged frontier, and 35 more</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h7"/></svg></div>
+                        <h3>Frameworks</h3>
+                        <p>Decision models for when to use AI and when to think independently</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+                        <h3>Practices</h3>
+                        <p>Methods for preserving thinking capacity: think-first, calibration, strategic alternation</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
+                        <h3>Sources</h3>
+                        <p>30+ curated papers with key findings and full citations</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -969,6 +1062,16 @@
     </div>
 
     <script>
+        function copyPrompt(btn) {
+            var text = btn.parentElement.querySelector('p').textContent;
+            navigator.clipboard.writeText(text).then(function() {
+                var svg = btn.querySelector('svg');
+                var original = svg.innerHTML;
+                svg.innerHTML = '<path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>';
+                setTimeout(function() { svg.innerHTML = original; }, 1500);
+            });
+        }
+
         if (!localStorage.getItem('cookie-consent')) {
             document.getElementById('cookieBanner').style.display = 'flex';
         }
