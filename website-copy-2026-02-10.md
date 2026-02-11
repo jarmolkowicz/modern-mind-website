@@ -76,8 +76,6 @@ Once your AI has the knowledge pack as context, you can prompt it to do real wor
 
 I'm Paweł Jarmołkowicz. After 20 years building technology, I've become focused on how we adopt and use it wisely.
 
-I can't do this alone. That's the point.
-
 This KB is designed to be bigger than one person's perspective. That's why it's open source.
 
 ---

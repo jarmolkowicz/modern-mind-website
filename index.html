@@ -269,6 +269,66 @@
             font-family: 'SF Mono', Monaco, monospace;
         }
 
+        /* Subtle CTA */
+        .cta-subtle {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 24px;
+            padding: 12px 24px;
+            border: 1.5px solid var(--indigo);
+            color: var(--indigo);
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+
+        .cta-subtle:hover {
+            background: var(--indigo);
+            color: white;
+        }
+
+        .cta-subtle svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Item with icon */
+        .grid-4 .item-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--indigo-light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .grid-4 .item-icon svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--indigo);
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        /* Step number */
+        .step-number {
+            width: 36px;
+            height: 36px;
+            background: var(--indigo);
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
         /* How It Works */
         .how-it-works {
             padding: 48px 0;
@@ -495,20 +555,6 @@
             opacity: 0.3;
         }
 
-        footer nav {
-            margin-bottom: 16px;
-        }
-
-        footer nav a {
-            color: var(--gray);
-            font-size: 13px;
-            margin: 0 12px;
-        }
-
-        footer nav a:hover {
-            color: var(--indigo);
-        }
-
         footer p {
             font-size: 12px;
             color: var(--gray-light);
@@ -566,8 +612,8 @@
                 </svg>
             </a>
             <nav>
-                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base">GitHub</a>
-                <a href="https://read.modrnmind.com/subscribe">Newsletter</a>
+                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://read.modrnmind.com/subscribe" target="_blank" rel="noopener">Newsletter</a>
             </nav>
         </div>
     </header>
@@ -576,9 +622,9 @@
         <section class="hero">
             <div class="container">
                 <h1>Modern Mind — Knowledge Base for the AI Age</h1>
-                <p class="subtitle">Research, practice, and professional insight translated into concepts you can teach from, apply, and verify.</p>
+                <p class="subtitle">Curated research, practice, and professional insight translated into concepts you can trust, teach from, and apply.</p>
                 <p class="stance">Not anti-AI · Not blindly pro-AI · Pro-human</p>
-                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" class="cta">
+                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" class="cta" target="_blank" rel="noopener">
                     Explore the Knowledge Base
                     <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M3 8h10M9 4l4 4-4 4"/>
@@ -601,18 +647,22 @@
                 <p style="font-size: 16px; color: var(--gray); margin-bottom: 16px; max-width: 640px;">Curated knowledge on AI and human thinking — structured for your AI to use as context, or for you to use directly.</p>
                 <div class="grid-4">
                     <div class="item">
+                        <div class="item-icon"><svg viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
                         <h3>Concepts</h3>
                         <p>Named phenomena: cognitive debt, fluency bias, jagged frontier, and 35 more</p>
                     </div>
                     <div class="item">
+                        <div class="item-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h7"/></svg></div>
                         <h3>Frameworks</h3>
                         <p>Decision models for when to use AI and when to think independently</p>
                     </div>
                     <div class="item">
+                        <div class="item-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
                         <h3>Practices</h3>
                         <p>Methods for preserving thinking capacity: think-first, calibration, strategic alternation</p>
                     </div>
                     <div class="item">
+                        <div class="item-icon"><svg viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
                         <h3>Sources</h3>
                         <p>30+ curated papers with key findings and full citations</p>
                     </div>
@@ -623,18 +673,21 @@
         <section class="how-it-works">
             <div class="container">
                 <p class="section-label">How It Works</p>
-                <p style="font-size: 16px; color: var(--gray); margin-bottom: 20px; max-width: 640px;">The knowledge base lives on <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" style="color: var(--indigo); font-weight: 500;">GitHub</a> — browse it, contribute to it, build on it. The <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest" style="color: var(--indigo); font-weight: 500;">knowledge pack</a> is one downloadable file you give to your AI.</p>
+                <p style="font-size: 16px; color: var(--gray); margin-bottom: 20px; max-width: 640px;">The knowledge base lives on <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" target="_blank" rel="noopener" style="color: var(--indigo); font-weight: 500;">GitHub</a> — browse it, contribute to it, build on it. The <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest" target="_blank" rel="noopener" style="color: var(--indigo); font-weight: 500;">knowledge pack</a> is one downloadable file you give to your AI.</p>
                 <div class="different-grid">
                     <div class="different-item">
-                        <h3>1. Download</h3>
-                        <p>One file. The full knowledge pack bundled into a single markdown, updated with every new entry.</p>
+                        <div class="step-number">1</div>
+                        <h3>Download</h3>
+                        <p>One file. The full <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest" target="_blank" rel="noopener" style="color: var(--indigo); font-weight: 500;">knowledge pack</a> bundled into a single markdown, updated with every new entry.</p>
                     </div>
                     <div class="different-item">
-                        <h3>2. Give it to your AI</h3>
+                        <div class="step-number">2</div>
+                        <h3>Give it to your AI</h3>
                         <p>Drop it into Claude Projects, NotebookLM, a Custom GPT, or any AI assistant that lets you upload files.</p>
                     </div>
                     <div class="different-item">
-                        <h3>3. Prompt</h3>
+                        <div class="step-number">3</div>
+                        <h3>Prompt</h3>
                         <p>Design, write, audit, or teach — with AI grounded in research instead of generic knowledge.</p>
                     </div>
                 </div>
@@ -682,6 +735,12 @@
                         </div>
                     </div>
                 </div>
+                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" class="cta-subtle" target="_blank" rel="noopener">
+                    Explore the Knowledge Base
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 8h10M9 4l4 4-4 4"/>
+                    </svg>
+                </a>
             </div>
         </section>
 
@@ -770,12 +829,12 @@
                     <div class="join-item">
                         <h3>Newsletter</h3>
                         <p>Research, discoveries, and thinking-in-progress.</p>
-                        <a href="https://read.modrnmind.com/subscribe">Subscribe →</a>
+                        <a href="https://read.modrnmind.com/subscribe" target="_blank" rel="noopener">Subscribe →</a>
                     </div>
                     <div class="join-item">
                         <h3>Contribute</h3>
                         <p>Add sources. Challenge concepts. Build on top.</p>
-                        <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/blob/main/_guide/contributing.md">See how →</a>
+                        <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/blob/main/_guide/contributing.md" target="_blank" rel="noopener">See how →</a>
                     </div>
                     <div class="join-item">
                         <h3>Share</h3>
@@ -812,12 +871,7 @@
                     <path d="M7436.43 890.773H7618.65L7614.24 723.243V17.8496H7814.11V1073H7330.62L6795.69 200.076H6614.94L6617.88 367.607V1073H6419.48V17.8496H6902.97L7436.43 890.773Z" fill="#201816"/>
                 </svg>
             </div>
-            <nav>
-                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base">Knowledge Base</a>
-                <a href="https://read.modrnmind.com/subscribe">Newsletter</a>
-                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/blob/main/_guide/contributing.md">Contribute</a>
-            </nav>
-            <p>Created by <a href="https://www.linkedin.com/in/jarmolkowicz">Paweł Jarmołkowicz</a> · MIT License</p>
+            <p>Created by <a href="https://www.linkedin.com/in/jarmolkowicz" target="_blank" rel="noopener">Paweł Jarmołkowicz</a> · MIT License</p>
         </div>
     </footer>
 
