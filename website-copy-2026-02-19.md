@@ -4,7 +4,7 @@
 
 **Title:** Modern Mind — Knowledge Base for the AI Age
 
-**Subtitle:** Built for people who advise teams on AI adoption, design trainings, write AI policies, create content. Turn your generic AI into a research-grounded specialist.
+**Subtitle:** Built for people who advise teams on AI adoption, write about it, teach it, or shape policy around it. Turn your generic AI into a research-grounded specialist.
 
 **Primary CTA:** Get the Knowledge Pack (direct file download, bypasses GitHub)
 
@@ -12,9 +12,9 @@
 
 ## Problem
 
-AI is reshaping how we think, decide, and work. Understanding how AI affects your thinking well enough to teach it, write about it, or shape policy around it is hard. The field is new, research is scattered across disciplines, and AI itself gives shallow answers on this topic.
+AI is reshaping how we think, decide, and work. The research on what this means is scattered across disciplines, the field is new, and AI itself gives confident but shallow answers on this topic.
 
-This knowledge base organizes 30+ papers from cognitive science, HCI, organizational psychology, and more into concepts that name what you're already experiencing, plus frameworks and practices you can apply. Curated through an AI-assisted, human-reviewed process. Give it to your AI and build real things: a workshop, a policy, an article. All grounded in research, not generic knowledge.
+This knowledge base organizes 30+ papers from cognitive science, HCI, organizational psychology, and more into concepts that name what you're already experiencing, plus frameworks and practices you can apply. Give it to your AI and build real things: a workshop, a policy, an article. All grounded in research, not generic knowledge.
 
 ---
 
@@ -44,7 +44,7 @@ Once your AI has the knowledge pack as context, try prompting it:
 
 ## What's Inside
 
-80+ entries across concepts, frameworks, practices, and sources. Every entry ties back to research or documented practice, status-tagged so you know the confidence level. Open source, MIT licensed.
+80+ entries across concepts, frameworks, practices, and sources. Every entry ties back to research or documented practice, status-tagged so you know the confidence level. Curated through an AI-assisted, human-reviewed process. Open source, MIT licensed.
 
 ---
 
@@ -52,7 +52,7 @@ Once your AI has the knowledge pack as context, try prompting it:
 
 I'm Paweł Jarmołkowicz. After 20 years building technology, I've become focused on how we adopt and use it wisely. Not anti-AI. Not blindly pro-AI. Pro-human.
 
-This KB draws on 30+ sources and is open to contributions. It's built to grow beyond one person's perspective.
+This KB is open to contributions and built to grow beyond one person's perspective.
 
 ---
 
