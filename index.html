@@ -63,7 +63,7 @@
             --gray: #4b5563;
             --gray-light: #9ca3af;
             --border: #eeeeee;
-            --cream: #f8f6f4;
+            --cream: #faf9f8;
             --white: #ffffff;
         }
 
@@ -142,6 +142,7 @@
             padding: 64px 0 48px;
         }
 
+
         .hero h1 {
             font-family: 'DM Serif Display', Georgia, serif;
             font-size: 48px;
@@ -214,8 +215,13 @@
 
         /* Problem */
         .problem {
-            padding: 48px 0;
-            border-top: 1px solid var(--border);
+            padding: 56px 0;
+            background: var(--cream);
+        }
+
+        .problem .container {
+            border-left: 3px solid var(--indigo);
+            padding-left: 24px;
         }
 
         .problem p {
@@ -225,8 +231,9 @@
         }
 
         .problem p + p {
-            margin-top: 12px;
+            margin-top: 16px;
         }
+
 
         /* Section label (h2) */
         .section-label {
@@ -241,40 +248,14 @@
 
         /* What's Inside */
         .whats-inside {
-            padding: 48px 0;
-            border-top: 1px solid var(--border);
+            padding: 56px 0;
         }
 
-        .grid-4 {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 16px;
-        }
-
-        .grid-4 .item {
-            background: var(--cream);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .grid-4 .item h3 {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--charcoal);
-            margin-bottom: 6px;
-        }
-
-        .grid-4 .item p {
-            font-size: 15px;
-            color: var(--gray);
-            line-height: 1.5;
-        }
 
         /* Use Cases */
         .use-cases {
-            padding: 48px 0;
-            border-top: 1px solid var(--border);
+            padding: 56px 0;
+            background: var(--cream);
         }
 
         .use-case-grid {
@@ -286,9 +267,14 @@
             display: flex;
             gap: 16px;
             padding: 16px 20px;
-            background: var(--cream);
+            background: var(--white);
             border-radius: 10px;
             align-items: flex-start;
+            transition: box-shadow 0.2s;
+        }
+
+        .use-case-item:hover {
+            box-shadow: 0 2px 8px rgba(62, 68, 138, 0.08);
         }
 
         .use-case-item .arrow {
@@ -355,7 +341,7 @@
             color: var(--indigo);
             border-radius: 8px;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 14px;
             transition: all 0.2s;
         }
 
@@ -367,26 +353,6 @@
         .cta-subtle svg {
             width: 16px;
             height: 16px;
-        }
-
-        /* Item with icon */
-        .grid-4 .item-icon {
-            width: 36px;
-            height: 36px;
-            background: var(--indigo-light);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 10px;
-        }
-
-        .grid-4 .item-icon svg {
-            width: 18px;
-            height: 18px;
-            stroke: var(--indigo);
-            stroke-width: 1.5;
-            fill: none;
         }
 
         /* Step number */
@@ -406,20 +372,14 @@
 
         /* How It Works */
         .how-it-works {
-            padding: 48px 0;
-            border-top: 1px solid var(--border);
+            padding: 56px 0;
         }
 
         .how-it-works .section-intro {
             margin-bottom: 20px;
         }
 
-        /* How It's Built */
-        .different {
-            padding: 48px 0;
-            border-top: 1px solid var(--border);
-        }
-
+        /* How It Works cards (reused from original different-grid) */
         .different-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -440,65 +400,15 @@
         }
 
         .different-item p {
-            font-size: 15px;
-            color: var(--gray);
-            line-height: 1.5;
-        }
-
-        /* Why Open Source */
-        .why-open {
-            padding: 48px 0;
-            border-top: 1px solid var(--border);
-        }
-
-        .reasons-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .reason-item {
-            display: flex;
-            gap: 14px;
-            align-items: flex-start;
-        }
-
-        .reason-icon {
-            width: 36px;
-            height: 36px;
-            background: var(--indigo-light);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .reason-icon svg {
-            width: 18px;
-            height: 18px;
-            stroke: var(--indigo);
-            stroke-width: 1.5;
-            fill: none;
-        }
-
-        .reason-item h3 {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--charcoal);
-            margin-bottom: 4px;
-        }
-
-        .reason-item p {
-            font-size: 15px;
+            font-size: 14px;
             color: var(--gray);
             line-height: 1.5;
         }
 
         /* Who */
         .who {
-            padding: 48px 0;
-            border-top: 1px solid var(--border);
+            padding: 56px 0;
+            background: var(--cream);
         }
 
         .who p {
@@ -524,7 +434,7 @@
             padding: 10px 20px;
             border: 1px solid var(--border);
             border-radius: 100px;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
             color: var(--charcoal);
             transition: all 0.2s;
@@ -542,8 +452,7 @@
 
         /* Join */
         .join {
-            padding: 48px 0;
-            border-top: 1px solid var(--border);
+            padding: 56px 0;
         }
 
         .join-grid {
@@ -556,6 +465,12 @@
             padding: 24px;
             background: var(--cream);
             border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .join-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(62, 68, 138, 0.08);
         }
 
         .join-item h3 {
@@ -566,14 +481,14 @@
         }
 
         .join-item p {
-            font-size: 15px;
+            font-size: 14px;
             color: var(--gray);
             margin-bottom: 16px;
             line-height: 1.5;
         }
 
         .join-item a {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
             color: var(--coral);
         }
@@ -696,15 +611,7 @@
                 font-size: 18px;
             }
 
-            .grid-4 {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
             .different-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .reasons-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -714,10 +621,6 @@
         }
 
         @media (max-width: 480px) {
-            .grid-4 {
-                grid-template-columns: 1fr;
-            }
-
             .hero h1 {
                 font-size: 32px;
             }
@@ -725,6 +628,11 @@
             .hero-ctas {
                 flex-direction: column;
                 align-items: flex-start;
+            }
+
+            header nav a {
+                margin-left: 16px;
+                font-size: 13px;
             }
         }
     </style>
@@ -759,18 +667,12 @@
         <section class="hero">
             <div class="container">
                 <h1>Modern Mind — Knowledge Base for the AI Age</h1>
-                <p class="subtitle">Built for people who advise teams on AI adoption, design trainings, write AI policies, create content.</p>
+                <p class="subtitle">Built for people who advise teams on AI adoption, teach it, write about it, or shape policy around it. Turn your generic AI into a research-grounded specialist.</p>
                 <div class="hero-ctas">
-                    <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest" class="cta" target="_blank" rel="noopener">
+                    <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest/download/modern-mind-kb.md" class="cta">
                         Get the Knowledge Pack
                         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M8 3v10M4 9l4 4 4-4"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" class="cta-secondary" target="_blank" rel="noopener">
-                        Browse on GitHub
-                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                            <path d="M3 8h10M9 4l4 4-4 4"/>
                         </svg>
                     </a>
                 </div>
@@ -779,20 +681,20 @@
 
         <section class="problem">
             <div class="container">
-                <p>AI is reshaping how we think, decide, and work. Understanding this well enough to teach it, write about it, or shape policy around it is hard. The field is new, research is scattered, and AI itself gives shallow answers on this topic.</p>
-                <p>We collected the research, named the key ideas, and organized everything into a knowledge base. Give it to your AI, and build real things, a workshop, a policy, an article. All grounded in curated research and best practices.</p>
+                <p>AI is reshaping how we think, decide, and work. Understanding how AI affects your thinking well enough to teach it, write about it, or shape policy around it is hard. The field is new, research is scattered across disciplines, and AI itself gives confident but shallow answers on this topic.</p>
+                <p>This knowledge base organizes <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/tree/main/sources" target="_blank" rel="noopener" style="color: var(--indigo); font-weight: 500;">30+ papers from cognitive science, HCI, organizational psychology, and more</a> into concepts that name what you're already experiencing, plus frameworks and practices you can apply. Curated through an AI-assisted, human-reviewed process. Give it to your AI and build real things: a workshop, a policy, an article. All grounded in research, not generic knowledge.</p>
             </div>
         </section>
 
         <section class="how-it-works">
             <div class="container">
                 <h2 class="section-label">How It Works</h2>
-                <p class="section-intro">The knowledge base lives on <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base" target="_blank" rel="noopener">GitHub</a> — browse it, contribute to it, build on it. The <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest" target="_blank" rel="noopener">knowledge pack</a> is one downloadable file you give to your AI.</p>
+                <p class="section-intro">The knowledge pack is one downloadable file you give to your AI.</p>
                 <div class="different-grid">
                     <div class="different-item">
                         <div class="step-number" aria-hidden="true">1</div>
                         <h3>Download</h3>
-                        <p>One file. The full <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest" target="_blank" rel="noopener" style="color: var(--indigo); font-weight: 500;">knowledge pack</a> bundled into a single markdown, updated with every new entry.</p>
+                        <p>One file. The full <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest/download/modern-mind-kb.md" style="color: var(--indigo); font-weight: 500;">knowledge pack</a>, a single markdown with all 80+ entries.</p>
                     </div>
                     <div class="different-item">
                         <div class="step-number" aria-hidden="true">2</div>
@@ -802,7 +704,7 @@
                     <div class="different-item">
                         <div class="step-number" aria-hidden="true">3</div>
                         <h3>Prompt</h3>
-                        <p>Design a training, draft a policy, write an article — with AI grounded in research instead of generic knowledge.</p>
+                        <p>Write an article, design a training, build a case — with AI grounded in research instead of generic knowledge.</p>
                     </div>
                 </div>
             </div>
@@ -813,6 +715,16 @@
                 <h2 class="section-label">Try These Prompts</h2>
                 <p class="section-intro">Once your AI has the knowledge pack as context, try prompting it:</p>
                 <div class="use-case-grid">
+                    <div class="use-case-item">
+                        <span class="arrow" aria-hidden="true">›</span>
+                        <div>
+                            <h3>Write with depth</h3>
+                            <p>Using the KB, help me write a LinkedIn post about why our consulting deliverables feel hollow. Ground it in research.</p>
+                        </div>
+                        <button class="copy-btn" onclick="copyPrompt(this)" aria-label="Copy prompt">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        </button>
+                    </div>
                     <div class="use-case-item">
                         <span class="arrow" aria-hidden="true">›</span>
                         <div>
@@ -836,8 +748,8 @@
                     <div class="use-case-item">
                         <span class="arrow" aria-hidden="true">›</span>
                         <div>
-                            <h3>Write with depth</h3>
-                            <p>Using the KB, help me write a LinkedIn post about why our consulting deliverables feel hollow. Ground it in research.</p>
+                            <h3>Build a case</h3>
+                            <p>Using the KB, help me build an evidence-based argument for why our team needs AI use guidelines before scaling adoption</p>
                         </div>
                         <button class="copy-btn" onclick="copyPrompt(this)" aria-label="Copy prompt">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
@@ -846,25 +758,15 @@
                     <div class="use-case-item">
                         <span class="arrow" aria-hidden="true">›</span>
                         <div>
-                            <h3>Review an AI workflow</h3>
-                            <p>Using the KB, review this AI workflow and flag where cognitive offloading risks are highest</p>
-                        </div>
-                        <button class="copy-btn" onclick="copyPrompt(this)" aria-label="Copy prompt">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-                        </button>
-                    </div>
-                    <div class="use-case-item">
-                        <span class="arrow" aria-hidden="true">›</span>
-                        <div>
-                            <h3>Onboard a team</h3>
-                            <p>Using the KB, create a 30-minute briefing on the key cognitive risks for someone joining an AI-heavy team</p>
+                            <h3>Explain a concept</h3>
+                            <p>Using the KB, help me explain cognitive debt to my team lead who thinks AI just makes everyone faster</p>
                         </div>
                         <button class="copy-btn" onclick="copyPrompt(this)" aria-label="Copy prompt">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
                         </button>
                     </div>
                 </div>
-                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest" class="cta-subtle" target="_blank" rel="noopener">
+                <a href="https://github.com/jarmolkowicz/modern-mind-knowledge-base/releases/latest/download/modern-mind-kb.md" class="cta-subtle">
                     Get the Knowledge Pack
                     <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <path d="M8 3v10M4 9l4 4 4-4"/>
@@ -876,101 +778,16 @@
         <section class="whats-inside">
             <div class="container">
                 <h2 class="section-label">What's Inside</h2>
-                <p class="section-intro">Research on AI and human thinking — structured for your AI to use as context, or for you to browse directly.</p>
-                <div class="grid-4">
-                    <div class="item">
-                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
-                        <h3>Concepts</h3>
-                        <p>Named phenomena: cognitive debt, fluency bias, jagged frontier, and 35 more</p>
-                    </div>
-                    <div class="item">
-                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h7"/></svg></div>
-                        <h3>Frameworks</h3>
-                        <p>Decision models for when to use AI and when to think independently</p>
-                    </div>
-                    <div class="item">
-                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
-                        <h3>Practices</h3>
-                        <p>Methods for preserving thinking capacity: think-first, calibration, strategic alternation</p>
-                    </div>
-                    <div class="item">
-                        <div class="item-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
-                        <h3>Sources</h3>
-                        <p>30+ curated papers with key findings and full citations</p>
-                    </div>
-                </div>
+                <p class="section-intro">80+ entries across concepts, frameworks, practices, and sources. Every entry ties back to research or documented practice, status-tagged so you know the confidence level. Open source, MIT licensed.</p>
             </div>
         </section>
 
-        <section class="different">
-            <div class="container">
-                <h2 class="section-label">How It's Built</h2>
-                <div class="different-grid">
-                    <div class="different-item">
-                        <h3>Evidence-first</h3>
-                        <p>Every concept ties back to research, documented practice, or professional insight. Status-tagged so you know the confidence level.</p>
-                    </div>
-                    <div class="different-item">
-                        <h3>Readable by you and your AI</h3>
-                        <p>Consistent formatting, metadata, and cross-references across every entry.</p>
-                    </div>
-                    <div class="different-item">
-                        <h3>Open source</h3>
-                        <p>MIT licensed. Use it, fork it, build on it. Knowledge about how AI affects thinking shouldn't be locked behind a paywall.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="why-open">
-            <div class="container">
-                <h2 class="section-label">Why Open Source</h2>
-                <div class="reasons-grid">
-                    <div class="reason-item">
-                        <div class="reason-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V12M12 12C12 9.5 14 7 17 6C17 9 15.5 12 12 12ZM12 12C12 9.5 10 7 7 6C7 9 8.5 12 12 12Z"/></svg>
-                        </div>
-                        <div>
-                            <h3>Emerging field</h3>
-                            <p>Needs diverse perspectives — practitioners, educators, and researchers who validate and contribute.</p>
-                        </div>
-                    </div>
-                    <div class="reason-item">
-                        <div class="reason-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14H12L11 22L20 10H12L13 2Z"/></svg>
-                        </div>
-                        <div>
-                            <h3>Urgent issue</h3>
-                            <p>We quietly outsource our thinking without realizing it. AI capabilities are advancing faster than our wisdom about using them.</p>
-                        </div>
-                    </div>
-                    <div class="reason-item">
-                        <div class="reason-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-                        </div>
-                        <div>
-                            <h3>Too many frameworks</h3>
-                            <p>Instead of adding to the noise, building one shared source of truth.</p>
-                        </div>
-                    </div>
-                    <div class="reason-item">
-                        <div class="reason-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7C8 4.79 9.79 3 12 3C14.21 3 16 4.79 16 7"/></svg>
-                        </div>
-                        <div>
-                            <h3>Knowledge should be open</h3>
-                            <p>Not locked behind paywalls or proprietary training programs.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section class="who">
             <div class="container">
                 <h2 class="section-label">Who's Behind This</h2>
                 <p>I'm <span class="emphasis" lang="pl">Paweł Jarmołkowicz</span>. After 20 years building technology, I've become focused on how we adopt and use it wisely. Not anti-AI. Not blindly pro-AI. Pro-human.</p>
-                <p>This KB is designed to be bigger than one person's perspective. That's why it's open source.</p>
+                <p>This KB draws on 30+ sources and is open to contributions. It's built to grow beyond one person's perspective.</p>
                 <a href="https://www.linkedin.com/in/jarmolkowicz" class="author-link" target="_blank" rel="noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
