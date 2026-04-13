@@ -14,7 +14,6 @@ Static site. Deploy to GitHub Pages, Netlify, or any static host.
 ## Links
 
 - [Knowledge Base](https://github.com/jarmolkowicz/modern-mind-knowledge-base)
-- [Newsletter](https://read.modrnmind.com)
 
 ## License
 
