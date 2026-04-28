@@ -13,7 +13,7 @@ Static site. Deploy to GitHub Pages, Netlify, or any static host.
 
 ## Links
 
-- [Knowledge Base](https://github.com/jarmolkowicz/modern-mind-knowledge-base)
+- [Knowledge Base](https://github.com/jarmolkowicz/modrn-mind-knowledge-base)
 
 ## License
 
