@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Mind — Knowledge Base for the AI Age</title>
-    <meta name="description" content="A curated knowledge base you give to your AI — so it can help you build from research. For trainers, policy writers, content creators, and consultants. Open source knowledge pack you can download and use.">
+    <title>Modern Mind — Curated Research on How AI Reshapes Thinking, Work & Self</title>
+    <meta name="description" content="Curated research on how AI is reshaping thinking, work, and self. 70+ sources from cognitive science, behavioral science, organizational psychology, education research, and HCI — packaged as one open-source file you give to your AI. MIT-licensed.">
+    <meta name="author" content="Paweł Jarmołkowicz">
+    <meta name="theme-color" content="#3e448a">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Google Analytics (consent-gated) -->
     <script>
@@ -30,21 +35,82 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://modrnmind.com">
-    <meta property="og:title" content="Modern Mind — Knowledge Base for the AI Age">
-    <meta property="og:description" content="A curated knowledge base you give to your AI — so it can help you build from research. For trainers, policy writers, content creators, and consultants.">
+    <meta property="og:title" content="Modern Mind — Curated Research on How AI Reshapes Thinking, Work & Self">
+    <meta property="og:description" content="Curated research on how AI is reshaping thinking, work, and self. 70+ sources from cognitive science, behavioral science, organizational psychology, education research, and HCI — packaged as one open-source file you give to your AI.">
     <meta property="og:site_name" content="Modern Mind">
-    <meta property="og:image" content="https://modrnmind.com/og.png">
+    <meta property="og:image" content="https://modrnmind.com/og.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Modern Mind — Curated research on how AI reshapes thinking, work, and self">
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Modern Mind — Knowledge Base for the AI Age">
-    <meta name="twitter:description" content="A curated knowledge base you give to your AI — so it can help you build from research. For trainers, policy writers, content creators, and consultants.">
-    <meta name="twitter:image" content="https://modrnmind.com/og.png">
+    <meta name="twitter:title" content="Modern Mind — Curated Research on How AI Reshapes Thinking, Work & Self">
+    <meta name="twitter:description" content="Curated research on how AI is reshaping thinking, work, and self. 70+ sources from cognitive science, behavioral science, organizational psychology, education research, and HCI — packaged as one open-source file you give to your AI.">
+    <meta name="twitter:image" content="https://modrnmind.com/og.jpg">
+    <meta name="twitter:image:alt" content="Modern Mind — Curated research on how AI reshapes thinking, work, and self">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://github.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://modrnmind.com/#website",
+          "url": "https://modrnmind.com",
+          "name": "Modern Mind",
+          "description": "Curated research on how AI is reshaping thinking, work, and self.",
+          "inLanguage": "en",
+          "publisher": { "@id": "https://modrnmind.com/#person-pawel" },
+          "license": "https://opensource.org/licenses/MIT"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://modrnmind.com/#person-pawel",
+          "name": "Paweł Jarmołkowicz",
+          "url": "https://modrnmind.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/jarmolkowicz",
+            "https://github.com/jarmolkowicz"
+          ],
+          "jobTitle": "Technology and innovation consultant",
+          "description": "Researches what AI does to human thinking, judgment, and expertise. Creator and curator of the Modern Mind Knowledge Base."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://modrnmind.com/#person-julia",
+          "name": "Julia Kołodko",
+          "url": "https://www.linkedin.com/in/jkolodko/",
+          "sameAs": ["https://www.linkedin.com/in/jkolodko/"],
+          "jobTitle": "Behavioral scientist (PhD)",
+          "description": "Contributes the research foundation — sourcing, reviewing, and validating the evidence base of the Modern Mind Knowledge Base."
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://modrnmind.com/#knowledge-pack",
+          "name": "Modern Mind Knowledge Pack",
+          "description": "Single open-source markdown file containing 140+ entries (concepts, methods, sources) about AI's effect on human thinking, work, and self. Built to be uploaded to AI tools (Claude Projects, NotebookLM, Custom GPTs) as research-grounded context.",
+          "url": "https://github.com/jarmolkowicz/modrn-mind-knowledge-base/releases/latest/download/modern-mind-kb.md",
+          "encodingFormat": "text/markdown",
+          "license": "https://opensource.org/licenses/MIT",
+          "inLanguage": "en",
+          "author": { "@id": "https://modrnmind.com/#person-pawel" },
+          "contributor": { "@id": "https://modrnmind.com/#person-julia" },
+          "isAccessibleForFree": true,
+          "keywords": "AI, knowledge base, cognitive science, behavioral science, organizational psychology, education research, human-AI interaction, metacognition, sycophancy, AI literacy, cognitive debt"
+        }
+      ]
+    }
+    </script>
 
     <style>
         * {
@@ -669,7 +735,7 @@
                 <h1>Modern Mind — Knowledge Base for the AI Age</h1>
                 <p class="subtitle">Built for people who advise teams on AI adoption, write about it, teach it, or shape policy around it. Turn your generic AI into a research-grounded specialist.</p>
                 <div class="hero-ctas">
-                    <a href="https://github.com/jarmolkowicz/modrn-mind-knowledge-base/releases/latest/download/modern-mind-kb.md" class="cta">
+                    <a href="https://github.com/jarmolkowicz/modrn-mind-knowledge-base/releases/latest/download/modern-mind-kb.md" class="cta" download>
                         Get the Knowledge Pack
                         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M8 3v10M4 9l4 4 4-4"/>
@@ -766,7 +832,7 @@
                         </button>
                     </div>
                 </div>
-                <a href="https://github.com/jarmolkowicz/modrn-mind-knowledge-base/releases/latest/download/modern-mind-kb.md" class="cta-subtle">
+                <a href="https://github.com/jarmolkowicz/modrn-mind-knowledge-base/releases/latest/download/modern-mind-kb.md" class="cta-subtle" download>
                     Get the Knowledge Pack
                     <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <path d="M8 3v10M4 9l4 4 4-4"/>
